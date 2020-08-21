@@ -5,6 +5,9 @@ One class is comments left by real users without any interests. Another one is c
 Data used in the project is confidential labeled dataset of objects collected from wildberries.ru. 
 ### Models 
 Best results on the crossvalidation were presented by Word2Vec vectorization by ruscorpora_300 model on XGBoost_300 model for classification and was equal to 89% of f1 metrics. Models trained on 15 000 objects each and consist of 302 or 102 features for input. 300 or 100 for vectorization, Sentiment feature which can take values of -1 or 1 and Valuation of the product of service which can take values from 0 to 5.
+RandomForest_100 model that didn't fit on github: https://drive.google.com/file/d/1qhvhrV5bOvuxs9bmPjQCW4RGGcIHmofv/view?usp=sharing
+Ruscorpora_300 model taken from ruscorpora project: https://github.com/RaRe-Technologies/gensim-data/tree/word2vec-ruscorpora-300 
+
 ### Web application
 File bootle_start.py contains simple web-app which returns class of the given object by the Get request in the json format. 
 Example of the request: 
